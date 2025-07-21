@@ -101,7 +101,7 @@ for genre in genre_col:
 
                 sim_ = sim(sig1, sig2)
 
-                if sim_ != 0:
+                if sim_ > 0.5:
                     track_id1 = list(hm.keys())[i]
                     track_id2 = list(hm.keys())[j]
                     track_name1 = tracks.loc[tracks['track_id'] == track_id1, 'track_name'].iloc[0]
